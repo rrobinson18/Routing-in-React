@@ -28,7 +28,7 @@ class SingleFilm extends Component {
                     <p className="card-text">Description: {this.state.films.description}</p>
                     <p className="card-text">Producer: {this.state.films.producer}</p>
                     <p className="card-text">Release Date: {this.state.films.release_date}</p>
-                    <Link className="btn btn-primary mt-2" to={"/film"}>Go Back to All Films</Link>
+                    <Link className="btn btn-primary mt-2" to={"/films"}>Go Back to All Films</Link>
                 </div>
             </div>
             </div>
