@@ -13,7 +13,7 @@ class PeopleCard extends Component {
                         <p className="card-text">Gender: {this.props.gender}</p>
                         <p className="card-text">Eye Color: {this.props.eye_color}</p>
                         <p className="card-text">Hair Color: {this.props.hair_color}</p>
-                        <Link className="btn btn-primary mt-2" to={"/peoeple/" + this.props.link}>See Person</Link>
+                        <Link className="btn btn-primary mt-2" to={"/person/" + this.props.link}>See Person</Link>
                     </div>
                 </div>
             </div>

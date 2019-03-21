@@ -13,7 +13,7 @@ class FilmCard extends Component {
                         <p className="card-text">Producer: {this.props.producer}</p>
                         <p className="card-text">Release Date: {this.props.release_date}</p>
                         <p className="card-text">Description: {this.props.description}</p>
-                        <Link className="btn btn-primary mt-2" to={"/films/" + this.props.link}>See Film</Link>
+                        <Link className="btn btn-primary mt-2" to={"/film/" + this.props.link}>See Film</Link>
                     </div>
                 </div>
             </div>
