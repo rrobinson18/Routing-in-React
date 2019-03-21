@@ -1,21 +1,28 @@
-import React, { Component, Fragment} from 'react';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Navbar from './Navbar';
+import FilmsCardList from './FilmsCardList';
+import SingleFilm from './SingleFilm';
+import PeopleCardList from './PeopleCardList';
+import Person from './Person';
 
-class App extends Component  {
+class App extends Component {
     render() {
-        return(
+        return (
             <Router>
                 <Fragment>
-                    <Link className="btn btn-primary">Go Home</Link>
-                    <Link className="btn btn-primary">View Films</Link>
-                    <Link className="btn btn-primary">View People</Link>
+    
+                    <Navbar />
+
                     <Switch>
-                    <Route />
-                    <Route />
+                        <Route exact path="/films" component={FilmsCardList} />
+                        <Route exact path="/people" component={PeopleCardList} />
+                        <Route exact path="/film/:id" component={SingleFilm} />
+                        <Route exact path="/person/:id" component={Person} />
                     </Switch>
                 </Fragment>
-                </Router>
+            </Router>
         )
     }
 }
