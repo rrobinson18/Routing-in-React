@@ -21,7 +21,7 @@ class Person extends Component {
     render() {
         return (
             <div className="col-sm-12">
-                <div className="card mb-5">
+                <div className="card bg-success mb-5">
                     <div className="card-body">
                         <h5 className="card-title">{this.state.person.name}</h5>
                         <h6 className="card-text">Age: {this.state.person.age}</h6>

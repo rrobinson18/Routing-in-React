@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 class FilmCard extends Component {
     render() {
         return (
-            <div className="col-sm-6">
-                <div className="card md-5">
+            <div className="row m-5">
+                <div className="card bg-success md-5">
                     <div className="card-body">
                         <h5 className="card-title">{this.props.title}</h5>
                         <h6 className="card-text">Director: {this.props.director}</h6>
